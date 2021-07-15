@@ -8,59 +8,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-brand-gray">
+<body>
     <!-- navigation -->
-    <div class="bg-white">
-        <div class="max-w-7xl mx-auto flex justify-between items-center font-roboto text-sm h-20 px-4">
-            <div class="flex items-center">
-                <a class="pr-4" href="index.html"><img class="w-36 xl:w-52" src="img/logo.png" alt="logo"></a>
-                <!-- search -->
-                <div class="hidden lg:flex items-center border-2 rounded w-48 py-2 px-2.5">
-                    <div class="h-4 w-4">
-                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+    <div class="max-w-7xl mx-auto flex justify-between items-center font-roboto text-sm h-20 px-4">
+        <div class="flex items-center">
+            <a class="pr-4" href="index.html"><img class="w-36 xl:w-52" src="img/logo.png" alt="logo"></a>
+            <!-- search -->
+            <div class="hidden lg:flex items-center border-2 rounded w-48 py-2 px-2.5">
+                <div class="h-4 w-4">
+                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
                 </div>
+                <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
             </div>
-            <button class="menu lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <div class="hidden lg:block xl:-ml-10">
-                <ul class="flex items-center space-x-4">
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">HIRE FREELANCERS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                          </svg>
-                    </a></li>
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">FIND JOBS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+        </div>
+        <button class="menu lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+        <div class="hidden lg:block xl:-ml-10">
+            <ul class="flex items-center space-x-4">
+                <li><a class="flex items-center" href="#">
+                    <p class="pr-1">HIRE FREELANCERS</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
                         </svg>
-                    </a></li>
-                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
-            </div>
-            <div class="hidden lg:flex items-center">
-                <a class="flex items-center space-x-1 pr-6" href="#">
-                    <img class="w-5" src="img/signup-icon.svg" alt="">
-                    <p>SIGN UP</p>
-                </a>
-                <a class="flex items-center space-x-1" href="#">
-                    <img class="w-5" src="img/signin-icon.svg" alt="">
-                    <p>LOGIN</p>
-                </a>
-            </div>
+                </a></li>
+                <li><a class="flex items-center" href="#">
+                    <p class="pr-1">FIND JOBS</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </a></li>
+                <li><a href="howitworks.html">HOW IT WORKS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+        <div class="hidden lg:flex items-center">
+            <a class="flex items-center space-x-1 pr-6" href="#">
+                <img class="w-5" src="img/signup-icon.svg" alt="">
+                <p>SIGN UP</p>
+            </a>
+            <a class="flex items-center space-x-1" href="#">
+                <img class="w-5" src="img/signin-icon.svg" alt="">
+                <p>LOGIN</p>
+            </a>
         </div>
     </div>
     <!-- mobile menu -->
-    <div class="mobile hidden bg-white text-sm p-4 space-y-5">
+    <div class="mobile hidden text-sm p-4 space-y-5">
         <!-- search -->
         <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
             <div class="h-4 w-4">
@@ -103,251 +101,253 @@
         </div>
     </div>
 
-    <!-- What we do -->
-    <section class="max-w-7xl mx-auto px-4 py-32">
-        <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
-            <!-- left side -->
-            <div class="md:max-w-md text-left">
-                <p class="text-brand-green font-roboto font-medium pb-3">WHAT WE DO</p>
-                <h2 class="text-4xl font-roboto text-gray-900 font-bold pb-6">We want to help businesses get more
-                    done.
-                </h2>
-                <div class="space-y-4">
-                    <!-- 1st -->
-                    <div class="flex space-x-5">
-                        <p class="text-brand-green text-2xl font-raleway font-bold">01</p>
-                        <div>
-                            <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Integrity</p>
-                            <p class="font-roboto text-gray-500">We provide a great pool of talent that can do it
-                                all,
-                                for thousands
-                                of
-                                projects, working side by side with creators that want to fulfill their dream.</p>
+    <main class="bg-brand-gray">
+        <!-- What we do -->
+        <section class="max-w-7xl mx-auto px-4 py-32">
+            <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
+                <!-- left side -->
+                <div class="md:max-w-md text-left">
+                    <p class="text-brand-green font-roboto font-medium pb-3">WHAT WE DO</p>
+                    <h2 class="text-4xl font-roboto text-gray-900 font-bold pb-6">We want to help businesses get more
+                        done.
+                    </h2>
+                    <div class="space-y-4">
+                        <!-- 1st -->
+                        <div class="flex space-x-5">
+                            <p class="text-brand-green text-2xl font-raleway font-bold">01</p>
+                            <div>
+                                <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Integrity</p>
+                                <p class="font-roboto text-gray-500">We provide a great pool of talent that can do it
+                                    all,
+                                    for thousands
+                                    of
+                                    projects, working side by side with creators that want to fulfill their dream.</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 2nd -->
-                    <div class="flex space-x-5">
-                        <p class="text-brand-green text-2xl font-raleway font-bold">02</p>
-                        <div>
-                            <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Vision</p>
-                            <p class="font-roboto text-gray-500">
-                                While many entrepreneurs fail at delivering great ideas, we make it
-                                easy to bring to reality your vision.
-                            </p>
+                        <!-- 2nd -->
+                        <div class="flex space-x-5">
+                            <p class="text-brand-green text-2xl font-raleway font-bold">02</p>
+                            <div>
+                                <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Vision</p>
+                                <p class="font-roboto text-gray-500">
+                                    While many entrepreneurs fail at delivering great ideas, we make it
+                                    easy to bring to reality your vision.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- 3rd -->
-                    <div class="flex space-x-5">
-                        <p class="text-brand-green text-2xl font-raleway font-bold">03</p>
-                        <div>
-                            <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Creativity</p>
-                            <p class="font-roboto text-gray-500">
-                                Also, we enable skilled freelancers to enjoy freedom and flexibility
-                                to bid on projects that they want to work on.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- right side -->
-            <div class="lg:w-1/2 w-full">
-                <img src="img/Illustration.svg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!-- Our mission -->
-    <section class="max-w-7xl mx-auto px-4 mb-32">
-        <div class="flex flex-col items-center text-center font-roboto">
-            <div class="pb-16">
-                <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Our Mission</h1>
-                <p class="text-2xl text-gray-900">Our mission to easily connect businesses with great talent</p>
-            </div>
-
-            <!-- Cards -->
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- card 1 -->
-                <a href="#"
-                    class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
-                    <img src="img/light.svg" alt="">
-                    <p class="text-xl font-medium pb-3 text-gray-900">Our History</p>
-                    <p class="text-gray-500">
-                        To make sure that each project succeeds, we build trust by bringing visibility to remote
-                        work
-                        and we offer reliable access to a large pool of quality talent
-                    </p>
-                </a>
-
-                <!-- card 2 -->
-                <a href="#"
-                    class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
-                    <img src="img/rocket.svg" alt="">
-                    <p class="text-xl font-medium pb-3 text-gray-900">Our Vision</p>
-                    <p class="text-gray-500">
-                        We provide the opportunity to easily browse top freelancers and grow your business
-                        effectively.
-                    </p>
-
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why we do -->
-    <section class="max-w-7xl mx-auto px-4 mb-32">
-        <div class="flex flex-col items-center text-center font-roboto">
-            <div class="pb-16 max-w-2xl">
-                <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why do we do what we do</h1>
-                <p class="text-2xl text-gray-900">We believe that we can help the founder of the next big innovative
-                    company create their dream product or service.</p>
-            </div>
-
-            <!-- Cards -->
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
-                <!-- card 1 -->
-                <a href="#"
-                    class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
-                    <img src="img/time.svg" alt="">
-                    <p class="text-xl font-medium pb-3 text-gray-900">Fast delivery</p>
-                    <p class="text-gray-500">
-                        Many entrepreneurs have excellent ideas but poor delivery.
-                    </p>
-                </a>
-
-                <!-- card 2 -->
-                <a href="#"
-                    class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-300 px-4 py-6">
-                    <div class="relative">
-                        <img src="img/phone-circle.svg" alt="">
-                        <img class="absolute bottom-5 right-4" src="img/phone-content.svg" alt="">
-                    </div>
-                    <p class="text-xl font-medium pb-3 text-gray-900">GoPlanDo App</p>
-                    <p class="text-gray-500">
-                        To prevent ideas from dying, we at JobHireHub with the GoPlanDo app create
-                        the opportunity for every business to transform a concept into a product or service,
-                        making
-                        dreams into reality.
-                    </p>
-
-                </a>
-
-                <!-- card 3 -->
-                <a href="#"
-                    class="bg-white md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
-                    <img src="img/pig.svg" alt="">
-                    <p class="text-xl font-medium pb-3 text-gray-900">Low Charge Fees</p>
-                    <p class="text-gray-500">
-                        Nowadays the market is saturated with freelance marketplace platforms that
-                        charge excessive fees to both freelancers and employers.
-                    </p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- why us -->
-    <section class="max-w-7xl mx-auto px-4">
-        <div class="flex flex-col items-center font-roboto">
-            <div class="max-w-2xl text-center pb-16">
-                <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why us?</h1>
-                <p class="text-2xl text-gray-900">For us, there is no job too small or too big</p>
-            </div>
-
-            <div class="space-y-20 my-16">
-                <div class="flex md:space-x-11 space-x-0 md:flex-nowrap flex-wrap">
-                    <!-- left side -->
-                    <div class="space-y-9 md:w-1/2 w-full md:order-1 order-2">
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We make your job post visible and enable you to receive
-                                competitive bids from the right freelancers within minutes.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We believe in your project and we offer the possibility to browse profiles, reviews,
-                                proposals and then interview top candidates.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We are at your side from step one when you hire the right freelancer and begin your
-                                job.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We encourage you to use our platform to chat, share files, and collaborate from your
-                                desktop or on the go, being just a click away from your dream project.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- right side -->
-                    <img class="md:w-1/2 w-full md:order-2 order-1 md:mb-0 mb-9" src="img/right-group-photo.svg" alt="">
-                </div>
-
-                
-                <div class="flex md:space-x-11 space-x-0 md:flex-nowrap flex-wrap">
-                    <!-- left side -->
-                    <img class="md:w-1/2 w-full md:mb-0 mb-9" src="img/left-group-photo.svg" alt="">
-
-                    <!-- right side -->
-                    <div class="space-y-9 md:w-1/2 w-full">
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We make your job post visible and enable you to receive
-                                competitive bids from the right freelancers within minutes.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We believe in your project and we offer the possibility to browse profiles, reviews,
-                                proposals and then interview top candidates.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We are at your side from step one when you hire the right freelancer and begin your
-                                job.
-                            </p>
-                        </div>
-
-                        <div class="flex space-x-4">
-                            <img src="img/tick.svg" alt="">
-                            <p class="text-lg">
-                                We encourage you to use our platform to chat, share files, and collaborate from your
-                                desktop or on the go, being just a click away from your dream project.
-                            </p>
+                        <!-- 3rd -->
+                        <div class="flex space-x-5">
+                            <p class="text-brand-green text-2xl font-raleway font-bold">03</p>
+                            <div>
+                                <p class="text-2xl font-raleway font-bold pb-4 text-gray-900">Creativity</p>
+                                <p class="font-roboto text-gray-500">
+                                    Also, we enable skilled freelancers to enjoy freedom and flexibility
+                                    to bid on projects that they want to work on.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="max-w-2xl">
-                <p class="text-lg text-center text-brand-green mb-8">
-                    With JobHireHub every Entrepreneur can hire Freelancers for a single job, find the
-                    right people for a large project, and everything in between.
-                </p>
+                <!-- right side -->
+                <div class="lg:w-1/2 w-full">
+                    <img src="img/Illustration.svg" alt="">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- Our mission -->
+        <section class="max-w-7xl mx-auto px-4 mb-32">
+            <div class="flex flex-col items-center text-center font-roboto">
+                <div class="pb-16">
+                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Our Mission</h1>
+                    <p class="text-2xl text-gray-900">Our mission to easily connect businesses with great talent</p>
+                </div>
+
+                <!-- Cards -->
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- card 1 -->
+                    <a href="#"
+                        class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
+                        <img src="img/light.svg" alt="">
+                        <p class="text-xl font-medium pb-3 text-gray-900">Our History</p>
+                        <p class="text-gray-500">
+                            To make sure that each project succeeds, we build trust by bringing visibility to remote
+                            work
+                            and we offer reliable access to a large pool of quality talent
+                        </p>
+                    </a>
+
+                    <!-- card 2 -->
+                    <a href="#"
+                        class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
+                        <img src="img/rocket.svg" alt="">
+                        <p class="text-xl font-medium pb-3 text-gray-900">Our Vision</p>
+                        <p class="text-gray-500">
+                            We provide the opportunity to easily browse top freelancers and grow your business
+                            effectively.
+                        </p>
+
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why we do -->
+        <section class="max-w-7xl mx-auto px-4 mb-32">
+            <div class="flex flex-col items-center text-center font-roboto">
+                <div class="pb-16 max-w-2xl">
+                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why do we do what we do</h1>
+                    <p class="text-2xl text-gray-900">We believe that we can help the founder of the next big innovative
+                        company create their dream product or service.</p>
+                </div>
+
+                <!-- Cards -->
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+                    <!-- card 1 -->
+                    <a href="#"
+                        class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
+                        <img src="img/time.svg" alt="">
+                        <p class="text-xl font-medium pb-3 text-gray-900">Fast delivery</p>
+                        <p class="text-gray-500">
+                            Many entrepreneurs have excellent ideas but poor delivery.
+                        </p>
+                    </a>
+
+                    <!-- card 2 -->
+                    <a href="#"
+                        class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-300 px-4 py-6">
+                        <div class="relative">
+                            <img src="img/phone-circle.svg" alt="">
+                            <img class="absolute bottom-5 right-4" src="img/phone-content.svg" alt="">
+                        </div>
+                        <p class="text-xl font-medium pb-3 text-gray-900">GoPlanDo App</p>
+                        <p class="text-gray-500">
+                            To prevent ideas from dying, we at JobHireHub with the GoPlanDo app create
+                            the opportunity for every business to transform a concept into a product or service,
+                            making
+                            dreams into reality.
+                        </p>
+
+                    </a>
+
+                    <!-- card 3 -->
+                    <a href="#"
+                        class="bg-white md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
+                        <img src="img/pig.svg" alt="">
+                        <p class="text-xl font-medium pb-3 text-gray-900">Low Charge Fees</p>
+                        <p class="text-gray-500">
+                            Nowadays the market is saturated with freelance marketplace platforms that
+                            charge excessive fees to both freelancers and employers.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- why us -->
+        <section class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-col items-center font-roboto">
+                <div class="max-w-2xl text-center pb-16">
+                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why us?</h1>
+                    <p class="text-2xl text-gray-900">For us, there is no job too small or too big</p>
+                </div>
+
+                <div class="space-y-20 my-16">
+                    <div class="flex md:space-x-11 space-x-0 md:flex-nowrap flex-wrap">
+                        <!-- left side -->
+                        <div class="space-y-9 md:w-1/2 w-full md:order-1 order-2">
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We make your job post visible and enable you to receive
+                                    competitive bids from the right freelancers within minutes.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We believe in your project and we offer the possibility to browse profiles, reviews,
+                                    proposals and then interview top candidates.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We are at your side from step one when you hire the right freelancer and begin your
+                                    job.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We encourage you to use our platform to chat, share files, and collaborate from your
+                                    desktop or on the go, being just a click away from your dream project.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- right side -->
+                        <img class="md:w-1/2 w-full md:order-2 order-1 md:mb-0 mb-9" src="img/right-group-photo.svg" alt="">
+                    </div>
+
+                    
+                    <div class="flex md:space-x-11 space-x-0 md:flex-nowrap flex-wrap">
+                        <!-- left side -->
+                        <img class="md:w-1/2 w-full md:mb-0 mb-9" src="img/left-group-photo.svg" alt="">
+
+                        <!-- right side -->
+                        <div class="space-y-9 md:w-1/2 w-full">
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We make your job post visible and enable you to receive
+                                    competitive bids from the right freelancers within minutes.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We believe in your project and we offer the possibility to browse profiles, reviews,
+                                    proposals and then interview top candidates.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We are at your side from step one when you hire the right freelancer and begin your
+                                    job.
+                                </p>
+                            </div>
+
+                            <div class="flex space-x-4">
+                                <img src="img/tick.svg" alt="">
+                                <p class="text-lg">
+                                    We encourage you to use our platform to chat, share files, and collaborate from your
+                                    desktop or on the go, being just a click away from your dream project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-2xl">
+                    <p class="text-lg text-center text-brand-green mb-8">
+                        With JobHireHub every Entrepreneur can hire Freelancers for a single job, find the
+                        right people for a large project, and everything in between.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- footer -->
-    <footer class="bg-white">
+    <footer>
         <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
             <div class="md:col-span-2 col-span-1 ">
                 <img class="mb-8" src="img/Logo_footer.svg" alt="">
