@@ -8,112 +8,138 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <!-- navigation -->
-        <div class="max-w-7xl mx-auto flex justify-between items-center font-roboto text-sm h-20 px-4">
-            <div class="flex items-center">
-                <a class="pr-4" href="index.html"><img class="w-36 xl:w-52" src="img/logo.png" alt="logo"></a>
+<body class="bg-brand-gray">
+    <header class="bg-white">
+        <!-- Dekstop Menu -->
+        <div class="max-w-7xl mx-auto flex items-center font-roboto text-sm h-20 px-4">
+            <a class="pr-4" href="index.html">
+                <img class="w-36 xl:w-52" src="img/logo.png" alt="logo">
+            </a>
+            <div class="flex-1 hidden lg:flex items-center justify-between">
                 <!-- search -->
                 <div class="hidden lg:flex items-center border-2 rounded w-48 py-2 px-2.5">
                     <div class="h-4 w-4">
-                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
-                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="Search...">
                 </div>
-            </div>
-            <button class="menu lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <div class="hidden lg:block xl:-ml-10">
-                <ul class="flex items-center space-x-4">
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">HIRE FREELANCERS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                            </svg>
-                    </a></li>
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">FIND JOBS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a></li>
-                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
-            </div>
-            <div class="hidden lg:flex items-center">
-                <a class="flex items-center space-x-1 pr-6" href="#">
-                    <img class="w-5" src="img/signup-icon.svg" alt="">
-                    <p>SIGN UP</p>
-                </a>
-                <a class="flex items-center space-x-1" href="#">
-                    <img class="w-5" src="img/signin-icon.svg" alt="">
-                    <p>LOGIN</p>
-                </a>
-            </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="mobile hidden text-sm p-4 space-y-5">
-            <!-- search -->
-            <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
-                <div class="h-4 w-4">
-                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-                <input class="w-full pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
-            </div>
 
-            <div class="lg:hidden">
-                <ul class="flex flex-col items-center space-y-2">
-                    <li class="">
-                        <a class="flex justify-center items-center" href="#">
+                <!-- Menu -->
+                <ul class="flex items-center text-gray-900 space-x-5">
+                    <li>
+                        <a class="flex items-center" href="#">
                             <p class="pr-1">HIRE FREELANCERS</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="flex items-center" href="#">
                             <p class="pr-1">FIND JOBS</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
                     </li>
-                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="howitworks.html">HOW IT WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
                 </ul>
+
+                <!-- Auth -->
+                <div class="hidden lg:flex items-center">
+                    <a class="flex items-center space-x-1 pr-6" href="#">
+                        <img class="w-5" src="img/signup-icon.svg" alt="">
+                        <p>SIGN UP</p>
+                    </a>
+                    <a class="flex items-center space-x-1" href="#">
+                        <img class="w-5" src="img/signin-icon.svg" alt="">
+                        <p>LOGIN</p>
+                    </a>
+                </div>
             </div>
-            <div class="lg:hidden space-y-2">
-                <a class="flex justify-center items-center bg-green-400 rounded-md py-2" href="#">
+
+            <!-- Toggle Menu Button -->
+            <button type="button" aria-label="Menu Bar" class="ml-auto menu lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile hidden w-full bg-white absolute  text-sm p-4 space-y-5 shadow-lg z-[100]">
+            <!-- search -->
+            <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
+                <div class="h-4 w-4">
+                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input class="w-full pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+            </div>
+
+            <ul class="flex flex-col items-center space-y-2">
+                <li class="">
+                    <a class="flex justify-center items-center" href="#">
+                        <p class="pr-1">HIRE FREELANCERS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center" href="#">
+                        <p class="pr-1">FIND JOBS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="howitworks.html">HOW IT WORKS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <div class="space-y-3 pb-5">
+                <a class="flex justify-center items-center bg-brand-green rounded-md py-2" href="#">
                     <p class="text-white">SIGN UP</p>
                 </a>
                 <p class="flex justify-center items-center">Do you have an account? &nbsp;
-                    <a href="#">LOGIN</a>
+                    <a href="#" class="text-brand-green uppercase">Login</a>
                 </p>
             </div>
         </div>
     </header>
 
-    <main class="bg-brand-gray">
+    <main >
         <!-- What we do -->
-        <section class="max-w-7xl mx-auto px-4 py-32">
+        <section class="max-w-7xl mx-auto px-4 py-28 md:py-32">
             <div class="flex justify-between items-center md:flex-nowrap flex-wrap">
                 <!-- left side -->
                 <div class="md:max-w-md text-left">
-                    <p class="text-brand-green font-roboto font-medium pb-3">WHAT WE DO</p>
-                    <h2 class="text-4xl font-roboto text-gray-900 font-bold pb-6">We want to help businesses get more
-                        done.
+                    <p class="text-brand-green font-roboto font-medium uppercase pb-3">
+                        WHAT WE DO
+                    </p>
+                    <h2 class="text-3xl md:text-4xl font-roboto text-gray-900 font-bold pb-6">
+                        We want to help businesses get more done.
                     </h2>
-                    <div class="space-y-4">
+                    <div class="space-y-4 mt-3">
                         <!-- 1st -->
                         <div class="flex space-x-5">
                             <p class="text-brand-green text-2xl font-raleway font-bold">01</p>
@@ -152,56 +178,64 @@
                 </div>
 
                 <!-- right side -->
-                <div class="lg:w-1/2 w-full">
+                <div class="w-3/4 lg:w-1/2 mx-auto md:mr-0 pt-5 md:pt-0">
                     <img src="img/Illustration.svg" alt="">
                 </div>
             </div>
         </section>
 
         <!-- Our mission -->
-        <section class="max-w-7xl mx-auto px-4 mb-32">
+        <section class="max-w-7xl mx-auto px-4 mb-24 md:mb-32">
             <div class="flex flex-col items-center text-center font-roboto">
                 <div class="pb-16">
-                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Our Mission</h1>
-                    <p class="text-2xl text-gray-900">Our mission to easily connect businesses with great talent</p>
+                    <h1 class="text-4xl md:text-5xl text-brand-green font-raleway font-bold pb-4">
+                        Our Mission
+                    </h1>
+                    <p class="text-lg md:text-2xl text-gray-900">
+                        Our mission to easily connect businesses with great talent
+                    </p>
                 </div>
 
                 <!-- Cards -->
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- card 1 -->
-                    <a href="#"
+                    <div
                         class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
                         <img src="img/light.svg" alt="">
-                        <p class="text-xl font-medium pb-3 text-gray-900">Our History</p>
+                        <p class="text-xl font-medium py-3 text-gray-900">Our History</p>
                         <p class="text-gray-500">
                             To make sure that each project succeeds, we build trust by bringing visibility to remote
                             work
                             and we offer reliable access to a large pool of quality talent
                         </p>
-                    </a>
+                    </div>
 
                     <!-- card 2 -->
-                    <a href="#"
+                    <div
                         class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
                         <img src="img/rocket.svg" alt="">
-                        <p class="text-xl font-medium pb-3 text-gray-900">Our Vision</p>
+                        <p class="text-xl font-medium py-3 text-gray-900">Our Vision</p>
                         <p class="text-gray-500">
                             We provide the opportunity to easily browse top freelancers and grow your business
                             effectively.
                         </p>
 
-                    </a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Why we do -->
-        <section class="max-w-7xl mx-auto px-4 mb-32">
+        <section class="max-w-7xl mx-auto px-4 mb-20 md:mb-32">
             <div class="flex flex-col items-center text-center font-roboto">
                 <div class="pb-16 max-w-2xl">
-                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why do we do what we do</h1>
-                    <p class="text-2xl text-gray-900">We believe that we can help the founder of the next big innovative
-                        company create their dream product or service.</p>
+                    <h1 class="text-4xl md:text-5xl text-brand-green font-raleway font-bold pb-4">
+                        Why do we do what we do
+                    </h1>
+                    <p class="text-lg md:text-2xl text-gray-900 leading-6">
+                        We believe that we can help the founder of the next big innovative
+                        company create their dream product or service.
+                    </p>
                 </div>
 
                 <!-- Cards -->
@@ -210,7 +244,7 @@
                     <a href="#"
                         class="bg-white md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-brand-green px-4 py-6">
                         <img src="img/time.svg" alt="">
-                        <p class="text-xl font-medium pb-3 text-gray-900">Fast delivery</p>
+                        <p class="text-xl font-medium py-3 text-gray-900">Fast delivery</p>
                         <p class="text-gray-500">
                             Many entrepreneurs have excellent ideas but poor delivery.
                         </p>
@@ -223,7 +257,7 @@
                             <img src="img/phone-circle.svg" alt="">
                             <img class="absolute bottom-5 right-4" src="img/phone-content.svg" alt="">
                         </div>
-                        <p class="text-xl font-medium pb-3 text-gray-900">GoPlanDo App</p>
+                        <p class="text-xl font-medium py-3 text-gray-900">GoPlanDo App</p>
                         <p class="text-gray-500">
                             To prevent ideas from dying, we at JobHireHub with the GoPlanDo app create
                             the opportunity for every business to transform a concept into a product or service,
@@ -237,7 +271,7 @@
                     <a href="#"
                         class="bg-white md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto md:w-[344px] w-full rounded-lg flex flex-col items-center border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-600 px-4 py-6">
                         <img src="img/pig.svg" alt="">
-                        <p class="text-xl font-medium pb-3 text-gray-900">Low Charge Fees</p>
+                        <p class="text-xl font-medium py-3 text-gray-900">Low Charge Fees</p>
                         <p class="text-gray-500">
                             Nowadays the market is saturated with freelance marketplace platforms that
                             charge excessive fees to both freelancers and employers.
@@ -251,8 +285,8 @@
         <section class="max-w-7xl mx-auto px-4">
             <div class="flex flex-col items-center font-roboto">
                 <div class="max-w-2xl text-center pb-16">
-                    <h1 class="text-5xl text-brand-green font-raleway font-bold pb-4">Why us?</h1>
-                    <p class="text-2xl text-gray-900">For us, there is no job too small or too big</p>
+                    <h1 class="text-4xl md:text-5xl text-brand-green font-raleway font-bold pb-4">Why us?</h1>
+                    <p class="text-lg md:text-2xl text-gray-900">For us, there is no job too small or too big</p>
                 </div>
 
                 <div class="space-y-20 my-16">
@@ -339,7 +373,7 @@
                 </div>
 
                 <div class="max-w-2xl">
-                    <p class="text-lg text-center text-brand-green mb-8">
+                    <p class="text-lg text-center text-brand-green font-semibold py-16 leading-6">
                         With JobHireHub every Entrepreneur can hire Freelancers for a single job, find the
                         right people for a large project, and everything in between.
                     </p>
@@ -349,8 +383,9 @@
     </main>
 
     <!-- footer -->
-    <footer>
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
+    <footer class="bg-white">
+        <div
+            class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
             <div class="md:col-span-2 col-span-1 ">
                 <img class="mb-8" src="img/Logo_footer.svg" alt="">
                 <p class="text-gray-500 text-sm leading-4 mb-6">Hire & Manage Any Project, Anytime, Anywhere.</p>

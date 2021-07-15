@@ -1,128 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JobHireHub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
-        <!-- navigation -->
-        <div class="max-w-7xl mx-auto flex justify-between items-center font-roboto text-sm h-20 px-4">
-            <div class="flex items-center">
-                <a class="pr-4" href="index.html"><img class="w-36 xl:w-52" src="img/logo.png" alt="logo"></a>
+
+<body class="bg-brand-gray">
+    <header class="bg-white">
+        <!-- Dekstop Menu -->
+        <div class="max-w-7xl mx-auto flex items-center font-roboto text-sm h-20 px-4">
+            <a class="pr-4" href="index.html">
+                <img class="w-36 xl:w-52" src="img/logo.png" alt="logo">
+            </a>
+            <div class="flex-1 hidden lg:flex items-center justify-between">
                 <!-- search -->
                 <div class="hidden lg:flex items-center border-2 rounded w-48 py-2 px-2.5">
                     <div class="h-4 w-4">
-                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </div>
-                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="Search...">
                 </div>
-            </div>
-            <button class="menu lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-            <div class="hidden lg:block xl:-ml-10">
-                <ul class="flex items-center space-x-4">
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">HIRE FREELANCERS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                            </svg>
-                    </a></li>
-                    <li><a class="flex items-center" href="#">
-                        <p class="pr-1">FIND JOBS</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
-                        </svg>
-                    </a></li>
-                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
-            </div>
-            <div class="hidden lg:flex items-center">
-                <a class="flex items-center space-x-1 pr-6" href="#">
-                    <img class="w-5" src="img/signup-icon.svg" alt="">
-                    <p>SIGN UP</p>
-                </a>
-                <a class="flex items-center space-x-1" href="#">
-                    <img class="w-5" src="img/signin-icon.svg" alt="">
-                    <p>LOGIN</p>
-                </a>
-            </div>
-        </div>
-        <!-- mobile menu -->
-        <div class="mobile hidden text-sm p-4 space-y-5">
-            <!-- search -->
-            <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
-                <div class="h-4 w-4">
-                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </div>
-                <input class="w-full pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
-            </div>
 
-            <div class="lg:hidden">
-                <ul class="flex flex-col items-center space-y-2">
-                    <li class="">
-                        <a class="flex justify-center items-center" href="#">
+                <!-- Menu -->
+                <ul class="flex items-center text-gray-900 space-x-5">
+                    <li>
+                        <a class="flex items-center" href="#">
                             <p class="pr-1">HIRE FREELANCERS</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="flex items-center" href="#">
                             <p class="pr-1">FIND JOBS</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-2 w-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
                     </li>
-                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
-                    <li><a href="#">BLOG</a></li>
+                    <li>
+                        <a href="howitworks.html">HOW IT WORKS</a>
+                    </li>
+                    <li>
+                        <a href="#">BLOG</a>
+                    </li>
                 </ul>
+
+                <!-- Auth -->
+                <div class="hidden lg:flex items-center">
+                    <a class="flex items-center space-x-1 pr-6" href="#">
+                        <img class="w-5" src="img/signup-icon.svg" alt="">
+                        <p>SIGN UP</p>
+                    </a>
+                    <a class="flex items-center space-x-1" href="#">
+                        <img class="w-5" src="img/signin-icon.svg" alt="">
+                        <p>LOGIN</p>
+                    </a>
+                </div>
             </div>
-            <div class="lg:hidden space-y-2">
-                <a class="flex justify-center items-center bg-green-400 rounded-md py-2" href="#">
+
+            <!-- Toggle Menu Button -->
+            <button type="button" aria-label="Menu Bar" class="ml-auto menu lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile hidden w-full bg-white absolute  text-sm p-4 space-y-5 shadow-lg z-[100]">
+            <!-- search -->
+            <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
+                <div class="h-4 w-4">
+                    <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input class="w-full pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+            </div>
+
+            <ul class="flex flex-col items-center space-y-2">
+                <li class="">
+                    <a class="flex justify-center items-center" href="#">
+                        <p class="pr-1">HIRE FREELANCERS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center" href="#">
+                        <p class="pr-1">FIND JOBS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="howitworks.html">HOW IT WORKS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+            <div class="space-y-3 pb-5">
+                <a class="flex justify-center items-center bg-brand-green rounded-md py-2" href="#">
                     <p class="text-white">SIGN UP</p>
                 </a>
                 <p class="flex justify-center items-center">Do you have an account? &nbsp;
-                    <a href="#">LOGIN</a>
+                    <a href="#" class="text-brand-green uppercase">Login</a>
                 </p>
             </div>
         </div>
     </header>
 
-    <main class="bg-brand-gray">
+
+    <main>
         <!-- hero section -->
         <div class="max-w-7xl mx-auto px-4">
-            <h1 class="text-5xl font-bold text-brand-green text-center pt-28">How It Works</h1>
-            <p class="font-roboto text-2xl text-gray-900 text-center max-w-2xl mx-auto pt-5 pb-16">We make it fast, simple, and cost-effective to find, hire and pay the best professionals anywhere, any time.</p>
-            <div class="rounded-3xl">
-                <div>
-                    <img class="w-full" src="img/video_photo.png" alt="">
+            <h1 class="text-4xl md:text-5xl font-bold text-brand-green text-center pt-24 md:pt-28">
+                How It Works
+            </h1>
+            <p class="font-roboto md:text-2xl text-gray-900 text-center max-w-2xl mx-auto pt-5 pb-10 md:pb-16">
+                We make it fast, simple, and cost-effective to find, hire and pay the best professionals anywhere, any
+                time.
+            </p>
+
+            <div class="relative overflow-hidden rounded-xl md:rounded-3xl">
+                <div class="relative md:h-[550px]">
+                    <img class="w-full h-full object-cover" src="img/video_photo.png" alt="">
+
+                    <button
+                        class="w-12 h-12 md:w-16 md:h-16 bg-white flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full">
+                        <svg class="w-5 md:w-7 pl-1" xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 27 30"
+                            fill="none">
+                            <path
+                                d="M24.5146 12.309C26.2127 13.2148 26.2934 15.619 24.66 16.6367L4.98798 28.8926C3.35455 29.9102 1.23202 28.778 1.16742 26.8546L0.389515 3.6902C0.324923 1.76678 2.36671 0.494723 4.06474 1.40049L24.5146 12.309Z"
+                                fill="#58D26F" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
 
         <!-- getting started steps -->
         <div class="max-w-4xl mx-auto px-4">
-            <h1 class="font-raleway font-bold text-4xl text-brand-green pt-32">Get Start Working  with JobHireHub 4 Easy Steps</h1>
+            <h1 class="font-raleway font-bold text-2xl md:text-4xl text-brand-green pt-16 md:pt-32">
+                Get Start Working with JobHireHub 4 Easy
+                Steps
+            </h1>
             <!-- large screen -->
             <div class="hidden md:flex pt-12">
                 <div class="w-2/5">
                     <h1 class="font-raleway font-bold text-2xl text-gray-900 pb-4">Post a Job</h1>
-                    <p class="font-roboto text-gray-500">If you’re looking to hire a freelancer, the first thing you need to do is post a job for the work that you want to get done. JobHireHub will then match freelancers to your project. The more complete you are in providing details and requirements for your project, the easier it will be to match you to the best freelancer.</p>
+                    <p class="font-roboto text-gray-500">If you’re looking to hire a freelancer, the first thing you
+                        need to do is post a job for the work that you want to get done. JobHireHub will then match
+                        freelancers to your project. The more complete you are in providing details and requirements for
+                        your project, the easier it will be to match you to the best freelancer.</p>
                     <img class="pt-2" src="img/Hire.png" alt="">
                     <h1 class="font-raleway font-bold text-2xl text-gray-900 pt-8 pb-4">Work</h1>
                     <p class="font-roboto text-gray-500">Freelancers use JobHireHub for earning and charge clients</p>
@@ -130,29 +181,40 @@
                 </div>
                 <div class="relative w-1/5 font-raleway">
                     <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white p-3">01</h1>
-                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-40 p-3">02</h1>
-                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-36 p-3">03</h1>
-                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-32 p-3">04</h1>
+                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-40 p-3">02
+                    </h1>
+                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-36 p-3">03
+                    </h1>
+                    <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white mt-32 p-3">04
+                    </h1>
                     <img class="absolute z-0 top-0 left-1/2" src="img/Line.svg" alt="">
                 </div>
                 <div class="w-2/5">
                     <img src="img/post_a_job.png" alt="">
                     <h1 class="font-raleway font-bold text-2xl text-gray-900 pt-8 pb-4">Hire</h1>
-                    <p class="font-roboto text-gray-500">Freelancers with the required skills will bid on your job post and propose project milestones. You choose the bid from the Freelancer and milestones that you like best.</p>
+                    <p class="font-roboto text-gray-500">Freelancers with the required skills will bid on your job post
+                        and propose project milestones. You choose the bid from the Freelancer and milestones that you
+                        like best.</p>
                     <img class="pt-4" src="img/Work.png" alt="">
                     <h1 class="font-raleway font-bold text-2xl text-gray-900 pt-8 pb-4">Payment</h1>
-                    <p class="font-roboto text-gray-500">JobHireHub has a fool proof invoicing and payment system. With our payment protection you only pay for the work that you authorize.</p>
+                    <p class="font-roboto text-gray-500">JobHireHub has a fool proof invoicing and payment system. With
+                        our payment protection you only pay for the work that you authorize.</p>
                 </div>
             </div>
+
             <!-- small screen -->
-            <div class="md:hidden pt-12">
+            <div class="md:hidden pt-5">
                 <!-- 01 -->
                 <div class="flex flex-wrap items-start pt-6">
                     <div class="flex items-start">
                         <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white p-3">01</h1>
                         <div class="pl-4">
                             <h1 class="font-raleway font-bold text-2xl text-gray-900 pb-4">Post a Job</h1>
-                            <p class="font-roboto text-gray-500">If you’re looking to hire a freelancer, the first thing you need to do is post a job for the work that you want to get done. JobHireHub will then match freelancers to your project. The more complete you are in providing details and requirements for your project, the easier it will be to match you to the best freelancer.</p>
+                            <p class="font-roboto text-gray-500">If you’re looking to hire a freelancer, the first thing
+                                you need to do is post a job for the work that you want to get done. JobHireHub will
+                                then match freelancers to your project. The more complete you are in providing details
+                                and requirements for your project, the easier it will be to match you to the best
+                                freelancer.</p>
                         </div>
                     </div>
                     <img class="mx-auto pt-2 pb-8" src="img/post_a_job.png" alt="">
@@ -163,7 +225,9 @@
                         <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white p-3">02</h1>
                         <div class="pl-4">
                             <h1 class="font-raleway font-bold text-2xl text-gray-900 pb-4">Hire</h1>
-                            <p class="font-roboto text-gray-500">Freelancers with the required skills will bid on your job post and propose project milestones. You choose the bid from the Freelancer and milestones that you like best.</p>
+                            <p class="font-roboto text-gray-500">Freelancers with the required skills will bid on your
+                                job post and propose project milestones. You choose the bid from the Freelancer and
+                                milestones that you like best.</p>
                         </div>
                     </div>
                     <img class="mx-auto pt-2 pb-8" src="img/Hire.png" alt="">
@@ -174,7 +238,8 @@
                         <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white p-3">03</h1>
                         <div class="pl-4">
                             <h1 class="font-raleway font-bold text-2xl text-gray-900 pb-4">Work</h1>
-                            <p class="font-roboto text-gray-500">Freelancers use JobHireHub for earning and charge clients</p>
+                            <p class="font-roboto text-gray-500">Freelancers use JobHireHub for earning and charge
+                                clients</p>
                         </div>
                     </div>
                     <img class="mx-auto pt-2 pb-8" src="img/Work.png" alt="">
@@ -185,7 +250,8 @@
                         <h1 class="relative z-30 w-16 mx-auto text-3xl text-brand-green font-bold bg-white p-3">04</h1>
                         <div class="pl-4">
                             <h1 class="font-raleway font-bold text-2xl text-gray-900 pb-4">Payment</h1>
-                            <p class="font-roboto text-gray-500">JobHireHub has a fool proof invoicing and payment system. With our payment protection you only pay for the work that you authorize.</p>
+                            <p class="font-roboto text-gray-500">JobHireHub has a fool proof invoicing and payment
+                                system. With our payment protection you only pay for the work that you authorize.</p>
                         </div>
                     </div>
                     <img class="mx-auto pt-2 pb-8" src="img/Payment.png" alt="">
@@ -195,39 +261,51 @@
 
         <!-- payment methods -->
         <div class="max-w-7xl mx-auto py-28 px-4">
-            <h1 class="text-4xl font-bold font-raleway text-center text-brand-green pb-4">Easy Payment Methods</h1>
-            <p class="text-2xl font-raleway text-center pb-12">You can choose to pay as per your convenience. Different methods include:</p>
+            <h1 class="text-3xl md:text-4xl font-bold font-raleway text-center text-brand-green pb-4">
+                Easy Payment Methods
+            </h1>
+            <p class="md:text-2xl font-raleway text-center pb-12">
+                You can choose to pay as per your convenience. Different
+                methods include:
+            </p>
             <!-- Cards -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- card 1 -->
-                <div class="bg-white w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-500 px-4 py-6">
+                <div
+                    class="bg-white w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-blue-500 px-4 py-6">
                     <img src="img/PayPal.svg" alt="">
                     <p class="text-xl font-medium pb-3 text-gray-900">Paypal</p>
-                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-white w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-500 px-4 py-6">
+                <div
+                    class="bg-white w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-500 px-4 py-6">
                     <div class="relative">
                         <img src="img/mastercard.svg" alt="">
                     </div>
                     <p class="text-xl font-medium pb-3 text-gray-900">Credit Card</p>
-                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
 
                 <!-- card 3 -->
-                <div class="bg-white md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-300 px-4 py-6">
+                <div
+                    class="bg-white md:col-span-2 md:justify-self-center lg:col-span-1 lg:justify-self-auto w-full rounded-lg border-b-8 border-white transform transition-all duration-300 hover:shadow-2xl hover:border-yellow-300 px-4 py-6">
                     <img src="img/Bitcoin.svg" alt="">
                     <p class="text-xl font-medium pb-3 text-gray-900">Cryptocurrency</p>
-                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                    <p class="text-gray-500">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
             </div>
         </div>
     </main>
 
     <!-- footer -->
-    <footer>
-        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
+    <footer class="bg-white">
+        <div
+            class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
             <div class="md:col-span-2 col-span-1 ">
                 <img class="mb-8" src="img/Logo_footer.svg" alt="">
                 <p class="text-gray-500 text-sm leading-4 mb-6">Hire & Manage Any Project, Anytime, Anywhere.</p>
@@ -287,4 +365,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

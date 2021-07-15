@@ -18,7 +18,7 @@ module.exports = {
       colors: {
         'brand-green': '#58D16F',
         'brand-dakr-green': '#49c761',
-        'brand-gray': '#E5E5E5',
+        'brand-gray': '#F2F2F2',
       },
     },
   },
