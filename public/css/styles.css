@@ -1154,6 +1154,18 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(37, 99, 235, var(--tw-border-opacity));
 }
+.hover\:border-blue-500:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(59, 130, 246, var(--tw-border-opacity));
+}
+.hover\:border-yellow-600:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(217, 119, 6, var(--tw-border-opacity));
+}
+.hover\:border-yellow-500:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(245, 158, 11, var(--tw-border-opacity));
+}
 .hover\:underline:hover {
 	text-decoration: underline;
 }
