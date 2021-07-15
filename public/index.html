@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHireHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-brand-gray">
+    <!-- navigation -->
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center font-roboto text-sm h-20 px-4">
+            <div class="flex items-center">
+                <a class="pr-4" href="index.html"><img class="w-36 xl:w-52" src="img/logo.png" alt="logo"></a>
+                <!-- search -->
+                <div class="hidden lg:flex items-center border-2 rounded w-48 py-2 px-2.5">
+                    <div class="h-4 w-4">
+                        <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input class="w-36 pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+                </div>
+            </div>
+            <button class="menu lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+            <div class="hidden lg:block xl:-ml-10">
+                <ul class="flex items-center space-x-4">
+                    <li><a class="flex items-center" href="#">
+                        <p class="pr-1">HIRE FREELANCERS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                          </svg>
+                    </a></li>
+                    <li><a class="flex items-center" href="#">
+                        <p class="pr-1">FIND JOBS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a></li>
+                    <li><a href="howitworks.html">HOW IT WORKS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                </ul>
+            </div>
+            <div class="hidden lg:flex items-center">
+                <a class="flex items-center space-x-1 pr-6" href="#">
+                    <img class="w-5" src="img/signup-icon.svg" alt="">
+                    <p>SIGN UP</p>
+                </a>
+                <a class="flex items-center space-x-1" href="#">
+                    <img class="w-5" src="img/signin-icon.svg" alt="">
+                    <p>LOGIN</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile hidden bg-white text-sm p-4 space-y-5">
+        <!-- search -->
+        <div class="lg:hidden w-full flex items-center border-2 rounded py-2 px-2.5">
+            <div class="h-4 w-4">
+                <svg class="h-4 w-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </div>
+            <input class="w-full pl-3 focus:outline-none" type="text" name="search" placeholder="SEARCH">
+        </div>
+
+        <div class="lg:hidden">
+            <ul class="flex flex-col items-center space-y-2">
+                <li class="">
+                    <a class="flex justify-center items-center" href="#">
+                        <p class="pr-1">HIRE FREELANCERS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center" href="#">
+                        <p class="pr-1">FIND JOBS</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" h-2 w-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="howitworks.html">HOW IT WORKS</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </div>
+        <div class="lg:hidden space-y-2">
+            <a class="flex justify-center items-center bg-green-400 rounded-md py-2" href="#">
+                <p class="text-white">SIGN UP</p>
+            </a>
+            <p class="flex justify-center items-center">Do you have an account? &nbsp;
+                <a href="#">LOGIN</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="max-w-3xl mx-auto flex flex-col justify-center items-center text-center font-raleway py-16 lg:py-28 px-4">
+        <h2 class="text-xl lg:text-26 font-semibold text-brand-green uppercase text-center">JobHireHub Affiliate Program</h2>
+        <h1 class="text-2xl lg:text-4xl font-bold py-5">EARNING JUST GOT BETTER!</h1>
+        <p class="text-lg lg:text-2xl text-gray-500 text-center pb-8 lg:pb-16">The affiliate program just got better. Get paid for referring Freelancers through emails, links on your blog, site or social media. It's FREE!</p>
+        <a class="text-white font-medium bg-brand-green font-roboto rounded py-4 px-5" href="#">Become an Affiliatee</a>
+    </div>
+
+    <!-- how it works -->
+    <div class="max-w-7xl mx-auto w-full flex flex-wrap font-roboto px-4 pb-32">
+        <!-- left -->
+        <div class="w-full lg:w-1/2 lg:pr-20">
+            <p class="text-brand-green pb-3.5">FEATURES</p>
+            <h1 class="text-4xl font-bold text-gray-900">HOW IT WORKS?</h1>
+            <p class="text-gray-500 pt-8 pb-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a class="inline-block text-white font-medium bg-brand-green font-roboto rounded py-4 px-10" href="#">Get started</a>
+        </div>
+        <!-- right -->
+        <div class="w-full lg:w-1/2 pl-4 pt-12 lg:pt-0">
+            <div class="sm:flex sm:space-x-10">
+                <div class="w-full sm:w-1/2 space-y-10">
+                    <div class="bg-white flex flex-col items-center rounded-2xl border-b-8 border-white hover:border-green-300 transition ease-in duration-300 py-8 px-3">
+                        <div class="bg-green-300 rounded-full w-20 p-6">
+                            <img class="w-8" src="img/add-user.svg" alt="">
+                        </div>
+                        <h1 class="text-center text-xl font-medium p-5">Sign up to Affiliate Network</h1>
+                        <p class="text-center text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                    </div>
+                    <div class="bg-white flex flex-col items-center rounded-2xl border-b-8 border-white hover:border-blue-300 transition ease-in duration-300 py-8 px-3">
+                        <div class="bg-blue-100 rounded-full w-20 p-6">
+                            <img class="w-8" src="img/group.svg" alt="">
+                        </div>
+                        <h1 class="text-center text-xl font-medium p-5">Refer Freelancers through link shares</h1>
+                        <p class="text-center text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/2 space-y-10 mt-12">
+                    <div class="bg-white flex flex-col items-center rounded-2xl border-b-8 border-white hover:border-red-300 transition ease-in duration-300 py-8 px-3">
+                        <div class="bg-red-100 rounded-full w-20 p-6">
+                            <img class="w-8" src="img/goal.svg" alt="">
+                        </div>
+                        <h1 class="text-center text-xl font-medium p-5">Freelancers register and complete jobs</h1>
+                        <p class="text-center text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                    </div>
+                    <div class="bg-white flex flex-col items-center rounded-2xl border-b-8 border-white hover:border-purple-300 transition ease-in duration-300 py-8 px-3">
+                        <div class="bg-purple-100 rounded-full w-20 p-6">
+                            <img class="w-8" src="img/video.svg" alt="">
+                        </div>
+                        <h1 class="text-center text-xl font-medium p-5">Get Paid</h1>
+                        <p class="text-center text-sm text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 lg:gap-10 gap-6 justify-items-center font-roboto border-b-2 text-center md:text-left py-14">
+            <div class="md:col-span-2 col-span-1 ">
+                <img class="mb-8" src="img/Logo_footer.svg" alt="">
+                <p class="text-gray-500 text-sm leading-4 mb-6">Hire & Manage Any Project, Anytime, Anywhere.</p>
+                <div class="flex space-x-5">
+                    <a href="#">
+                        <img src="img/facebook.svg" alt="facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="#">
+                        <img src="img/instagram.svg" alt="instagram">
+                    </a>
+                    <a href="#">
+                        <img src="img/pinterest.svg" alt="pinterest">
+                    </a>
+                </div>
+            </div>
+
+            <!-- footer navigation -->
+            <div class="space-y-5">
+                <p class="text-sm text-gray-900 font-medium">GENERAL</p>
+                <a href="about.html" class="block text-sm hover:underline">About Us</a>
+                <a href="#" class="block text-sm hover:underline">Blog</a>
+                <a href="#" class="block text-sm hover:underline">Browse Jobs<br>(For Freelancers)</a>
+                <a href="#" class="block text-sm hover:underline">Browse Freelancers<br>(For Clients)</a>
+            </div>
+
+            <div class="space-y-5">
+                <p class="text-sm text-gray-900 font-medium">SUPPORT</p>
+                <a href="#" class="block text-sm hover:underline">Help & Support</a>
+                <a href="#" class="block text-sm hover:underline">How it Works</a>
+                <a href="#" class="block text-sm hover:underline">FAQ</a>
+                <a href="#" class="block text-sm hover:underline">Service Health Dashboard</a>
+            </div>
+
+            <div class="space-y-5">
+                <p class="text-sm text-gray-900 font-medium">USEFUL LINKS</p>
+                <a href="#" class="block text-sm hover:underline">Terms & Conditions</a>
+                <a href="#" class="block text-sm hover:underline">Privacy Policy</a>
+                <a href="#" class="block text-sm hover:underline">Acceptable Use Policy</a>
+                <a href="#" class="block text-sm hover:underline">Affiliate Program</a>
+                <a href="#" class="block text-sm hover:underline">Roadmap</a>
+            </div>
+
+            <div class="space-y-5">
+                <p class="text-sm text-gray-900 font-medium">DOWNLOADS</p>
+                <a href="#" class="block text-sm hover:underline">Hourly Time-Tracker</a>
+                <a href="#" class="block text-sm hover:underline">iOS Mobile App</a>
+                <a href="#" class="block text-sm hover:underline">Android Mobile App</a>
+            </div>
+        </div>
+
+        <p class="text-gray-500 text-sm text-center py-8">&copy; 2021 JobHireHub, Inc. All rights reserved.</p>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
