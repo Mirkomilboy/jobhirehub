@@ -2,7 +2,7 @@ module.exports = {
   mode: 'jit',
   purge: [
     './public/**/*.html'
-   ],
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -17,6 +17,7 @@ module.exports = {
       },
       colors: {
         'brand-green': '#58D16F',
+        'brand-dakr-green': '#49c761',
         'brand-gray': '#E5E5E5',
       },
     },
